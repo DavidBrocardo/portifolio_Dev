@@ -68,6 +68,27 @@ button:hover {
   padding: 10px;
 }
 
+a.btn {
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #0B5CFF;
+  border-radius: 25px;
+  padding: 5px 30px;
+  color: #484848;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+a.btn:hover {
+  background-color: #e9fff4;
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+
+  
 /* Cabecalho */
 
 header {
@@ -122,7 +143,7 @@ section#capa-conteudo {
 section#capa-imagem {
   grid-area: capa-imagem;
   
-  border-radius: 1000px;
+  border-radius: 2000px;
   overflow: hidden;
 }
 
@@ -146,6 +167,13 @@ section#contato {
 
 section#contato {
   grid-area: contato;
+}
+
+.botoes{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 section#projetos{
@@ -308,37 +336,82 @@ form textarea {
 
 
 @media (max-width: 768px) {
-  #menu-toggle {
+ #menu-toggle {
     display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1100; /* Fica acima do menu */
   }
 
   #menu-nav {
     display: none;
-    width: 100%;
+    position: absolute;
+    top: 60px; 
+    left: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    width: max-content;
+    min-width: 150px;
+    z-index: 1000;
   }
 
   #menu-nav.active {
-    display: block; 
+    display: block;
   }
 
   #menu-nav ul {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+    margin: 0;
     padding: 0;
-    margin-top: 10px;
     list-style: none;
-    text-align: center;
   }
 
   #menu-nav ul li a {
     display: block;
-    padding: 10px;
+    padding: 8px 12px;
     text-decoration: none;
     color: #484848;
+    border-radius: 4px;
   }
 
   #menu-nav ul li a:hover {
     background-color: #d0f0e4;
+  }
+
+
+
+  h1 {
+  font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  ul a:link,
+  ul a:visited {
+    padding: 5px;
+    text-decoration: none;
+    color: #484848;
+    font-size: 0.9rem;
+  }
+
+  ul a:hover {
+    color: #0B5CFF;
   }
 }
 

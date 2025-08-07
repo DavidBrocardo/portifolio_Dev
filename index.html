@@ -14,7 +14,7 @@
         <header id="cabecalho">
             <button id="menu-toggle" aria-label="Toggle menu">☰</button>
 
-            <nav id="menu-nav">
+             <nav id="menu-nav">
                 <ul>
                 <li><a href="#apresentacao">About Me</a></li>
                 <li><a href="#curriculo">Resume</a></li>
@@ -38,7 +38,7 @@
 
          
         <section id="capa-conteudo">
-        <h1>Hello, my name is <span class="texto-destaque">David Antonio Brocardo</span></h1>
+        <h1>Hey, I'm <span class="texto-destaque">David</span></h1>
         <h3>Full-Stack Developer <br>
             Computer Science student at the State University of Western Paraná.</h3>
             
@@ -106,12 +106,21 @@
 
         
         <section id="curriculo">
-            <h2>Baixe o meu cúrriculo:</h2>
-            <button type="open">Baixar</button>
-         </section> 
+        <h3>Download my resume:</h3>
+        <div class="botoes">
+            <a href="pdf/Técnicas de PDI aplicadas para a identificação e extração automática de atividades antrópicas.pdf" target="_blank">
+            <button>Resume in Portuguese</button>             
+            </a>
+            
+            <a href="curriculo_en.pdf" target="_blank">
+            <button>Resume in English</button>
+            </a>
+        </div>
+        </section>
+
         
         <section id="projetos">
-            <h2>Meus Projetos</h2>
+            <h3>Meus Projetos</h3>
 
             <div class="card">
                 <h3>Projeto 1 - Sistema de Tarefas</h3>
@@ -156,8 +165,10 @@
 
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" rows="5" required></textarea>
-
-            <button type="submit">Enviar</button>
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+            </div>
+            
             </form>
             <p id="resposta"></p>
         </section>
