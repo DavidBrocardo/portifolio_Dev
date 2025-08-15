@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
-    <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="estilo.css">
-</body>
-<script src="script.js"></script>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+        <title>David</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="icon" type="image/png" href="img/programacao-da-web.png">
+    </head>
+    <script src="script.js"></script>
+<body>
+     
     
-    <div class="container">
-        <header id="cabecalho">
-            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+      
+    
+    <div class="container">           
 
-             <nav id="menu-nav">
-                <ul>
-                <li><a href="#apresentacao">About Me</a></li>
-                <li><a href="#curriculo">Resume</a></li>
-                <li><a href="#projetos">Projects</a></li>
-                <li><a href="#conhecimentos">Skills</a></li>
-                <li><a href="#contato">Contact</a></li>
-                </ul>
-            </nav>
-        
-            <div id="icones-contato"> 
-                <a href="https://github.com/DavidBrocardo" target="_blank">
-                    <img src="img/github.png" alt="GitHub">
-                </a> 
-                <a href="https://linkedin.com/in/david-antonio-brocardo-8712bb1b6" target="_blank">
-                    <img src="img/linkedin.png" alt="LinkedIn">
-                </a>
+        <section id="cabecalho">
+            <div class="menu-container">
+                <div class="menu-box">
+                
+                    <div class="menu-logo">
+                        <img src="img/programacao.png" alt="Logo">
+                    </div>
+                    <div class="menu-links">
+                        <a href="#apresentacao">About Me</a>
+                        <a href="#curriculo">Resume</a>
+                        <a href="projetos.html">Projects</a>
+                        <a href="projetos.html">Skills</a>
+                        <a href="#contato">Contact</a>
+                    </div>
+
+                    
+                  <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                </div>
             </div>
 
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#apresentacao">About Me</a>
+                <a href="#curriculo">Resume</a>
+                <a href="projetos.html">Projects</a>
+                <a href="projetos.html">Skills</a> 
+                <a href="#contato">Contact</a>
+                
+            </div>
+        
+            
+                   
 
-        </header>
+        </section>
 
-         
         <section id="capa-conteudo">
         <h1>Hey, I'm <span class="texto-destaque">David</span></h1>
         <h3>Full-Stack Developer <br>
@@ -51,137 +69,136 @@
         
 
         <section id="apresentacao">
-            <h2>About Me</h2>
+             <h2>About Me</h2>
+
             <p>
-                Lorem ipsum dolor sit amet. In rerum cumque non quia eligendi sed illum doloremque id voluptatibus ipsum ea deleniti ipsum qui harum illo. Sit quod perspiciatis vel quibusdam dolor hic rerum consequatur eos galisum sapiente rem iusto repellat eos consequatur molestias et architecto consequatur. Qui odio laborum aut dolor vitae ea dolorem internos in reprehenderit iste qui quidem internos. Aut animi voluptatem At nesciunt distinctio ut optio internos est earum accusantium eos dolore maxime.
+                Meu nome é <span class="texto-destaque">David Antonio Brocardo</span>. Sou acadêmico do último ano do curso de Bacharelado
+                em Ciência da Computação pela Unioeste e atuo atualmente como estagiário na área de Desenvolvimento de Software, com foco 
+                em aplicações Web utilizando a linguagem Java.
             </p>
-          
+
+            <p>
+                Minha trajetória na área de computação começou ainda no ensino médio, quando cursei o Técnico em Informática integrado ao
+                ensino regular no IFPR. Desde então, venho aprofundando meus conhecimentos e habilidades na área.
+            </p>
+
+            <p>
+                Durante a graduação, desenvolvi uma base sólida em lógica de programação, estruturas de dados, análise e complexidade de algoritmos, 
+                bancos de dados, engenharia de software, sistemas operacionais e redes de computadores. Participei de diversos projetos acadêmicos e 
+                trabalhos em equipe, que contribuíram para o aprimoramento das minhas competências em resolução de problemas, colaboração e pensamento crítico.
+            </p>
+
+            <p>
+                Além de Java, também explorei outras linguagens de programação como Python, C, C++ e JavaScript.
+            </p>
+        </section> 
+        
+        <section id="linha-tempo">
 
             <div class="bloco-experiencia">
-                <h3>Experiência Profissional:</h3>
+                <h2>Experiência Profissional:</h2>
                 <div class="vOut"><div class="vIn">
                     <div class="event">
-                        <p class="eDate">12 Mar 2077 1:23</p>
-                        <p class="eTxt">Dogetor Dogetorius discovered a mysterious round object.</p>
-                    </div>
-                    <div class="event">
-                        <p class="eDate">12 Mar 2077 2:34</p>
-                        <p class="eTxt">The object is secured in the Dogetor's lab.</p>
-                    </div>
-                    <div class="event">
-                        <p class="eDate">12 Mar 2077 3:45</p>
-                        <p class="eTxt">The Dogetor carried out various "tests" and "experiments" on the round object.</p>
-                    </div>
-                    <div class="event">
-                        <p class="eDate">12 Mar 2077 4:56</p>
-                        <p class="eTxt">The mysterious object turns out to be what humans call a "ball".</p>
+                        <p class="eDate">Junho de 2025</p>
+                        <p class="eTxt">Inicio do Estágio.</p>
                     </div>
                 </div>
             </div>
             <div class="bloco-formacao">
-                <h3>Formação Acadêmica:</h3>
+                <h2>Formação Acadêmica:</h2>
                 <div class="vOut"><div class="vIn">
                     <div class="event">
-                        <p class="eDate">Atualmente</p>
+                        <p class="eDate">2025 - atualmente</p>
                         <p class="eTxt">Estudante no último ano .</p>
                     </div>
                     <div class="event">
+                        <p class="eDate">2025 - Aprovação no TCC</p>
+                        <p class="eTxt">Azinho no tcc .</p>
+                    </div>
+                    <div class="event">
+                        <p class="eDate">2022 - PETComp</p>
+                        <p class="eTxt">softskils .</p>
+                    </div>
+                    <div class="event">
+                        <p class="eDate">2022 - Iniciação Ciêntifica</p>
+                        <p class="eTxt">money.</p>
+                    </div>
+                    <div class="event">
                         <p class="eDate">2021 - Unioeste</p>
-                        <p class="eTxt"> Inicio do Curso </p>
+                        <p class="eTxt"> Inicio do Curso CC </p>
                     </div>
                     <div class="event">
-                        <p class="eDate">12 Mar 2077 3:45</p>
-                        <p class="eTxt">The Dogetor carried out various "tests" and "experiments" on the round object.</p>
-                    </div>
-                    <div class="event">
-                        <p class="eDate">12 Mar 2077 4:56</p>
-                        <p class="eTxt">The mysterious object turns out to be what humans call a "ball".</p>
+                        <p class="eDate">2017 á 2020  IFPR</p>
+                        <p class="eTxt">Info.</p>
                     </div>
                 </div>
             </div>
         
         </section> 
         
-        
-
-        
+    
         <section id="curriculo">
-        <h3>Download my resume:</h3>
-        <div class="botoes">
-            <a href="pdf/Técnicas de PDI aplicadas para a identificação e extração automática de atividades antrópicas.pdf" target="_blank">
-            <button>Resume in Portuguese</button>             
-            </a>
-            
-            <a href="curriculo_en.pdf" target="_blank">
-            <button>Resume in English</button>
-            </a>
-        </div>
+            <div>
+                <h2>Download my resume:</h2>
+                <div class="botoes">
+                    <a href="pdf/Técnicas de PDI aplicadas para a identificação e extração automática de atividades antrópicas.pdf" target="_blank">
+                    <button>Resume in Portuguese</button>             
+                    </a>
+                    
+                    <a href="curriculo_en.pdf" target="_blank">
+                    <button>Resume in English</button>
+                    </a>
+                </div>
+            </div>
+        
         </section>
 
-        
-        <section id="projetos">
-            <h3>Meus Projetos</h3>
 
-            <div class="card">
-                <h3>Projeto 1 - Sistema de Tarefas</h3>
-                <p>Aplicativo web para controle de tarefas com backend em Node.js e frontend em React.</p>
-                <a href="#" target="_blank">Ver no GitHub</a>
-            </div>
-
-            <div class="card">
-                <h3>Projeto 2 - Portfólio Responsivo</h3>
-                <p>Site pessoal com HTML, CSS e JavaScript puro, focado em acessibilidade e SEO.</p>
-                <a href="#" target="_blank">Ver no GitHub</a>
-            </div>
-
-          </section>  
         
          <section id="contato">
-            <h2>Fale comigo:</h2>
-            <div id="icones-todos-contato"> 
-                <a href="https://github.com/DavidBrocardo" target="_blank">
-                    <img src="img/github.png" alt="GitHub">
-                </a> 
-                <a href="https://linkedin.com/in/david-antonio-brocardo-8712bb1b6" target="_blank">
-                    <img src="img/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="mailto:davidbrocardo@gmail.com" target="_blank">
-                    <img src="img/gmail.png" alt="Gmail">
-                </a>
-                <a href="https://wa.me/+554598246911" target="_blank">
-                    <img src="img/whatsapp.png" alt="WhatsApp">
-                </a>
-                 <a href="https://instagram.com/brocardo_david/" target="_blank">
-                    <img src="img/instagram.png" alt="WhatsApp">
-                </a>
-            </div>
+            <div>
+                <h2>Contact Me:</h2>
+                <div id="icones-todos-contato"> 
+                    <a href="https://github.com/DavidBrocardo" target="_blank">
+                        <img src="img/github.png" alt="GitHub">
+                    </a> 
+                    <a href="https://linkedin.com/in/david-antonio-brocardo-8712bb1b6" target="_blank">
+                        <img src="img/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:davidbrocardo@gmail.com" target="_blank">
+                        <img src="img/gmail.png" alt="Gmail">
+                    </a>
+                    <a href="https://wa.me/+554598246911" target="_blank">
+                        <img src="img/whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://instagram.com/brocardo_david/" target="_blank">
+                        <img src="img/instagram.png" alt="WhatsApp">
+                    </a>
+                </div>
 
-            <form id="formContato" onsubmit="return enviarFormulario(event)">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" required />
+                <form id="formContato" onsubmit="return enviarFormulario(event)">
+                <label for="nome">Name:</label>
+                <input type="text" id="nome" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required />
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required />
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" rows="5" required></textarea>
-            <div class="botoes">
-                <button type="submit">Enviar</button>
-            </div>
-            
-            </form>
-            <p id="resposta"></p>
-        </section>
-        
+                <label for="mensagem">Your message:</label>
+                <textarea id="mensagem" rows="5" required></textarea>
+                <div class="botoes">
+                    <button type="submit">Submit</button>
+                </div>
+                
+                </form>
+                <p id="resposta"></p>
+            </div>            
+        </section>        
     </div>
 
-    
-            
-
-    
     <footer>
         <h4>© 2025 - David Antonio Brocardo</h4>
     </footer>
 
 </body>
 </html>
+    

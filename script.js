@@ -1,10 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.getElementById('menu-toggle');
-  const nav = document.getElementById('menu-nav');
+    const toggleBtn = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
+    toggleBtn.addEventListener('click', () => {
+        mobileMenu.style.display = 
+            mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+
+          menu.classList.toggle("show");
+          menuToggle.classList.toggle("active");
     });
-  }
+
+    mobileMenu.addEventListener('click', () => {
+        mobileMenu.style.display = 
+            mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+
 });
+
+
+
+

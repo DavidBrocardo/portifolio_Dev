@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Responsivo</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #3b54a1;
+    }
+
+    /* Container principal do menu */
+    .menu-container {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    /* Caixa branca arredondada */
+    .menu-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 50px;
+        padding: 8px 20px;
+        width: 90%;
+        max-width: 900px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Logo */
+    .menu-logo img {
+        width: 28px;
+        height: auto;
+        flex: 0 0 auto;
+    }
+
+    /* Links desktop */
+    .menu-links {
+        flex: 1; /* ocupa o espaço central */
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        padding: 8px 16px;
+    }
+
+    .menu-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: color 0.2s;
+    }
+
+    .menu-links a:hover {
+        color: #3b54a1;
+    }
+
+    /* Botão hambúrguer (oculto no desktop) */
+    .menu-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        border-radius: 2px;
+    }
+
+    /* Menu mobile drop-down */
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 5%;
+        background: white;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .menu-links {
+            display: none; /* esconde links e mostra hamburguer */
+        }
+        .menu-toggle {
+            display: flex;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="menu-container">
+    <div class="menu-box">
+        <!-- Logo -->
+        <div class="menu-logo">
+            <img src="programacao.png" alt="Logo">
+        </div>
+
+        <!-- Links desktop -->
+        <div class="menu-links">
+            <a href="#">Início</a>
+            <a href="#">Membros</a>
+            <a href="#">NewsPETLetter</a>
+            <a href="#">Projetos</a>
+            <a href="#">Sala</a>
+            <a href="#">Faq</a>
+        </div>
+
+        <!-- Botão hambúrguer mobile -->
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</div>
+
+<!-- Menu mobile -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#">Início</a>
+    <a href="#">Membros</a>
+    <a href="#">NewsPETLetter</a>
+    <a href="#">Projetos</a>
+    <a href="#">Sala</a>
+    <a href="#">Faq</a>
+</div>
+
+<script>
+    const toggleBtn = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    toggleBtn.addEventListener('click', () => {
+        mobileMenu.style.display = 
+            mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+</script>
+
+</body>
+</html>
